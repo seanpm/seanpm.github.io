@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My PennyMac Loan Application</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Polaris Theme -->
+    <link href="css/theme.css" rel="stylesheet">
+    <!-- Animation Effects -->
+    <link rel="stylesheet" type="text/css" media="all" href="css/animate.css">
+    <!-- Toggle Switches -->
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.0/css/bootstrap-toggle.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+      <!-- Static navbar -->
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#" data-toggle="modal" data-target=".settings-modal">Settings</a></li>
+              <li><a href="#">Logout</li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+      <div class="modal fade settings-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="exampleModalLabel">Settings</h4>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-12">
+                  <h3>Notifications</h3>
+                  <form>
+                    <div class="form-group col-md-6">
+                      <label for="email">Email</label>
+                      <input type="email" class="form-control" id="email" placeholder="funderwood@whitehouse.gov">
+                    </div>
+                    <div class="col-md-6 settings-toggle">
+                      <input type="checkbox" checked data-toggle="toggle">
+                    </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group col-md-6">
+                    <label for="phone">Phone</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="(202) 456-1414">
+                  </div>
+                  <div class="col-md-6 settings-toggle">
+                      <input type="checkbox" checked data-toggle="toggle">
+                    </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                <hr />
+                  <h3>Security</h3>
+                    <div class="form-group col-md-6">
+                      <label for="password">Password</label>
+                      <input type="password" class="form-control" id="password" placeholder="">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="password2">Password (again)</label>
+                      <input type="password2" class="form-control" id="password2" placeholder="">
+                    </div>
+                </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                <hr />
+                  <div class="form-group col-md-12">
+                    <button type="submit" class="btn btn-primary pull-right" data-toggle="modal" data-target=".settings-modal">Save</button>
+                  </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<!--       <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
+        </div>
+      </div> -->
+      <div id="loan-details">
+        <div id="loan-tray">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6">
+                <p class="lead"><a id="tour-2" data-toggle="collapse" href="#collapse-details" aria-expanded="false" aria-controls="collapseExample">15-Yr Fixed HARP Refi for $550,000</a></p>
+              </div>
+              <div class="col-sm-6 hidden-xs">
+                <p id="tour-3" class="lead pull-right">Expected Closing Date: <span class="status-good">03/30/2015</span></p>
+              </div>
+            </div>
+            <div class="collapse" id="collapse-details"> 
+              <div class="row">
+                <div class="col-xs-12">
+                  <p class="lead"><span class="glyphicon glyphicon-map-marker"></span> 2068 Crist Drive, Los Altos, CA</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="list-group list-group-horizontal">
+                    <a href="#" class="list-group-item">3.375% Rate</a>
+                    <a href="#" class="list-group-item">0.350 Points</a>
+                    <a href="#" class="list-group-item">4.330% APR</a>
+                    <a href="#" class="list-group-item">$3,898/mo</a>
+                    <a href="#" class="list-group-item"><span class="glyphicon glyphicon-lock"></span> Rate Locked Until 04/28/15</a>
+                  </div>
+                  <p class="muted">*The above are proposed terms.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="container">
+      <main>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="row">
+              <div class="col-sm-8">
+                <h1 id="tour-1">Hi Francis.</h1>
+                <h2 id="tour-4">Here's your to-do list:</h2>
+              </div>
+              <div class="col-md-4 hidden-xs">
+                <img src="img/house-appraisal.png" class="img-circle appraisal-photo pull-right animated tada">
+              </div>
+            </div>
+<!--         <div class="row todo-heading">
+          <div class="col-sm-9">
+            <h4>Task:</h4>
+          </div>
+          <div class="col-sm-3 pull-left">
+            <h4>Due:</h4>
+          </div>
+        </div> -->
+          <hr />
+            <div class="todo-item reply-sent">
+              <p><span class="glyphicon glyphicon-unchecked"></span> &nbsp;<a data-toggle="collapse" href="#collapse1" aria-expanded="false" aria-controls="collapseExample">Reply to RE: Provide Landlord contact information</a> <span class="due-date status-okay pull-right">Due by 04/09/15</span></p>
+                <div class="collapse" id="collapse1">
+                  <div class="panel panel-default">
+                    <div class="panel-heading"><strong>Secure Message</strong></div>
+                      <div class="panel-body">
+                        <p><strong>From:</strong> Audrey Dabolt on 04/05/15 at 10:15AM (PST)</p>
+                        <hr />
+                        <p>Hi Francis, can you please provide me with the full name, address and contact number for your Landlord?</p>
+                        <textarea class="form-control" rows="3" placeholder="Type your reply here..."></textarea>
+                        <input class="btn btn-default pull-right send-reply" type="submit" value="Send">
+                      </div>
+                  </div>
+                </div>
+            </div>
+            <hr />
+            <div class="todo-item reply-sent">
+              <p><span class="glyphicon glyphicon-unchecked"></span> &nbsp;<a data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapseExample">Reply to RE: Borrower reason for moving</a> <span class="due-date status-okay pull-right">Due by 04/09/15</span></p>
+                <div class="collapse" id="collapse2">
+                  <div class="panel panel-default">
+                    <div class="panel-heading"><strong>Secure Message</strong></div>
+                      <div class="panel-body">
+                        <p><strong>From:</strong> Audrey Dabolt on 03/28/15 at 10:15AM (PST)</p>
+                        <hr />
+                        <p>Hi Francis, can you please provide me with the full explanation for your reason for moving?  Thanks!</p>
+                        <textarea class="form-control" rows="3" placeholder="Type your reply here..."></textarea>
+                        <input class="btn btn-default pull-right send-reply" type="submit" value="Send">
+                      </div>
+                  </div>
+                </div>
+            </div>
+            <hr />
+          </div>
+          <div class="col-sm-5 pull-right">
+
+                        <div class="stepwizard">
+                <div class="stepwizard-row">
+                    <div class="stepwizard-step">
+                        <button type="button" class="btn btn-primary btn-circle"><span class="glyphicon glyphicon-ok"></span></button>
+                        <p>Application</p>
+                    </div>
+                    <div class="stepwizard-step">
+                        <button type="button" class="btn btn-primary btn-circle">2</button>
+                        <p>Processing</p>
+                    </div>
+                    <div class="stepwizard-step">
+                        <button type="button" class="btn btn-default btn-circle" disabled="disabled">3</button>
+                        <p>Underwriting</p>
+                    </div> 
+                    <div class="stepwizard-step">
+                        <button type="button" class="btn btn-default btn-circle" disabled="disabled">4</button>
+                        <p>Approval</p>
+                    </div> 
+                    <div class="stepwizard-step">
+                        <button type="button" class="btn btn-default btn-circle" disabled="disabled">5</button>
+                        <p>Closing</p>
+                    </div> 
+                </div>
+            </div>
+
+            <h3 id="tour-5">Processing</h3>
+              <p class="lead">
+                You've made it through the mortgage loan application – whew! Now your application works its way through the loan process on its way to the closing table.
+              </p>
+              <p>
+                <a href="#"><span class="glyphicon glyphicon-facetime-video"></span> Watch the Video</a> | <a href="http://www.pennymacusa.com/blog/explaining-the-loan-process-part-3-processing">Learn more...</a>
+              </p>
+              <hr>
+              <p class="lead"><span class="glyphicon glyphicon-time"></span> How long does this take?</p>
+              <p>Processing started on 03/09/15 and usually takes about 10 business days.</p>
+          </div>
+        </div>
+      </main>
+      <div id="help">
+        <p class="lead pull-right"><span class="team-avatars"><img src="https://lh3.googleusercontent.com/-tsLKdWMUTKg/AAAAAAAAAAI/AAAAAAAAA2U/Btjz45M5B1Q/s120-c/photo.jpg" width="35" height="35" class="img-circle"> <img src="https://lh3.googleusercontent.com/_RdpGMze40Fasao4Oi1a3Mc39SLGeNUAwjjOT89F5A=w438-h436-p-no" width="35" height="35" class="img-circle"> <img src="https://lh3.googleusercontent.com/-BgU-7WY6nZk/AAAAAAAAAAI/AAAAAAAAHGg/LY5C1VDBPlo/s120-c/photo.jpg" width="35" height="35" class="img-circle"></span>Got questions? Need help? &nbsp;<a href="#" id="tour-7" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Let's Talk</a></p>
+      </div>
+      <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="exampleModalLabel">Talk to Us</h4>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <h2>Your PennyMac Loan Team</h2>
+                  <div class="contact-card current-contact animated pulse"><!-- Contact Card -->
+                    <div class="row">
+                      <div class="col-xs-4">
+                        <img src="https://lh3.googleusercontent.com/-tsLKdWMUTKg/AAAAAAAAAAI/AAAAAAAAA2U/Btjz45M5B1Q/s120-c/photo.jpg" width="100" height="100" class="img-thumbnail">
+                      </div>
+                      <div class="col-xs-8">
+                        <h4><strong>John Swain</strong> is currently working on your loan.</h4>
+                        <p><strong>Loan Officer</strong></p>
+                        <p>Phone: (866) 545-9070</p>
+                        <p>Email: <a href="#">john.swain@pnmac.com</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contact-card"><!-- Contact Card -->
+                    <div class="row">
+                      <div class="col-xs-4">
+                        <img src="https://lh3.googleusercontent.com/_RdpGMze40Fasao4Oi1a3Mc39SLGeNUAwjjOT89F5A=w438-h436-p-no" width="100" height="100" class="img-thumbnail">
+                      </div>
+                      <div class="col-xs-8">
+                        <h4><strong>Kelly Miyahara</strong></h4>
+                        <p><strong>Loan Processor</strong></p>
+                        <p>Phone: (866) 545-9070</p>
+                        <p>Email: <a href="#">kelly.miyahara@pnmac.com</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contact-card"><!-- Contact Card -->
+                    <div class="row">
+                      <div class="col-xs-4">
+                        <img src="https://lh3.googleusercontent.com/-BgU-7WY6nZk/AAAAAAAAAAI/AAAAAAAAHGg/LY5C1VDBPlo/s120-c/photo.jpg" width="100" height="100" class="img-thumbnail">
+                      </div>
+                      <div class="col-xs-8">
+                        <h4>Farnaz Ansari</h4>
+                        <p><strong>Closer</strong></p>
+                        <p>Phone: (866) 545-9070</p>
+                        <p>Email: <a href="#">farnaz.ansari@pnmac.com</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <h2>Live Chat with PennyMac Support</h2>
+                    <div class="well">
+                    <p><span class="online"></span> We are online! Ask us anything.</p>
+                    <hr data-brackets-id="12673">
+                    <div class="input-group">
+                        <input type="text" id="userComment" class="form-control input-sm chat-input" placeholder="Write your message here..." />
+                      <span class="input-group-btn" onclick="addComment()">     
+                            <a href="#" class="btn btn-primary btn-sm">Send</a>
+                        </span>
+                    </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="loan-history">
+        <h2>Application Activity</h2>
+        <div id="history-items">
+          <div id="search-box">
+            <div class="row">
+              <div class="col-sm-9">
+                <input class="form-control search" placeholder="Search by keyword..." />
+              </div>
+              <div class="col-sm-3">
+                <ul class="filter pull-left">
+                  <li class="btn btn-default btn-sm active" id="filter-none">All</li>
+                  <li class="btn btn-default btn-sm" id="filter-documents">Documents</li>
+                  <li class="btn btn-default btn-sm" id="filter-messages">Messages</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <ul class="list timeline">
+          <li>
+            <div class="timeline-badge"><i class="glyphicon glyphicon-cog"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">You uploaded the two most recent paystubs for all borrowers that reflect 30 days of pay history</h4>
+                <p class="timestamp"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 04/02/15 at 4:48PM (PST)</small></p>
+                <span class="category">Documents</span>
+              </div>
+              <div class="timeline-body">
+                <p><a href="#">View Documents</a></p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-badge"><i class="glyphicon glyphicon-upload"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">You updated yur email address</h4>
+                <p class="timestamp"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 04/02/15 at 3:18PM (PST)</small></p>
+                <span class="category">Messages</span>
+              </div>
+              <div class="timeline-body">
+                <p><a href="#">View Settings</a></p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-badge"><i class="glyphicon glyphicon-send"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">You called us</h4>
+                <p class="timestamp"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 04/02/15 at 3:15PM (PST)</small></p>
+                <span class="category">Messages</span>
+              </div>
+              <div class="timeline-body">
+                <p><a href="#">Show Message</a></p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-badge"><i class="glyphicon glyphicon-phone-alt"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">We called you</h4>
+                <p class="timestamp"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 04/02/15 at 2:09PM (PST)</small></p>
+                <span class="category">Messages</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-badge"><i class="glyphicon glyphicon-thumbs-up"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">You uploaded a current copy of the Property Tax Bill for all Real Estate owned</h4>
+                <p class="timestamp"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 04/02/15 at 3:29PM (PST)</small></p>
+                <span class="category">Documents</span>
+              </div>
+              <div class="timeline-body">
+                <p><a href="#">View Documents</a></p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-badge"><i class="glyphicon glyphicon-upload"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">You uploaded a copy of your co-borrower's social security card</h4>
+                <p class="timestamp"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 04/01/15 at 12:18AM (PST)</small></p>
+                <span class="category">Documents</span>
+              </div>
+              <div class="timeline-body">
+                <p><a href="#">View Documents</a></p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-badge"><i class="glyphicon glyphicon-cog"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">You uploaded a copy of your social security card</h4>
+                <p class="timestamp"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 04/01/15 at 12:13AM (PST)</small></p>
+                <span class="category">Documents</span>
+              </div>
+              <div class="timeline-body">
+                <p><a href="#">View Settings</a></p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-badge"><i class="glyphicon glyphicon-upload"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">You uploaded your most recent 2 years signed tax returns, including all schedules</h4>
+                <p class="timestamp"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 03/31/15 at 3:18PM (PST)</small></p>
+                <span class="category">Documents</span>
+              </div>
+              <div class="timeline-body">
+                <p><a href="#">View Documents</a></p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-badge"><i class="glyphicon glyphicon-send"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">You uploaded the most recent 2 years W2 forms</h4>
+                <p class="timestamp"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 03/30/15 at 6:15PM (PST)</small></p>
+                <span class="category">Documents</span>
+              </div>
+              <div class="timeline-body">
+                <p><a href="#">Show Details</a></p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-badge"><i class="glyphicon glyphicon-phone-alt"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">You provided Earnest Money Deposit Source evidence</h4>
+                <p class="timestamp"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 03/30/15 at 5:09PM (PST)</small></p>
+                <span class="category">Documents</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-badge"><i class="glyphicon glyphicon-thumbs-up"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">You confirmed receipt of the Disclosures Packet</h4>
+                <p class="timestamp"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 03/29/15 at 3:29PM (PST)</small></p>
+                <span class="category">Documents</span>
+              </div>
+              <div class="timeline-body">
+                <p><a href="#">View Documents</a></p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-badge"><i class="glyphicon glyphicon-upload"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">You uploaded your Driver's License</h4>
+                <p class="timestamp"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 03/29/15 at 3:24PM (PST)</small></p>
+                <span class="category">Documents</span>
+              </div>
+              <div class="timeline-body">
+                <p><a href="#" data-toggle="modal" data-target=".docs-modal">View Documents</a></p>
+              </div>
+            </div>
+            <div class="docs-modal modal fade bs-example1-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h4 class="modal-title" id="exampleModalLabel">Driver's License</h4>
+                              </div>
+                              <div class="modal-body">
+                                <img src="img/license.jpg" style="width:500px;">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+          </li>
+          <li>
+            <div class="timeline-badge"><i class="glyphicon glyphicon-cog"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">You set your notification preferences</h4>
+                <p class="timestamp"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 03/29/15 at 3:21PM (PST)</small></p>
+                <span class="category">Messages</span>
+              </div>
+              <div class="timeline-body">
+                <p><a href="#">View Settings</a></p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-badge"><i class="glyphicon glyphicon-upload"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">You uploaded your W2</h4>
+                <p class="timestamp"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 03/29/15 at 3:18PM (PST)</small></p>
+                <span class="category">Documents</span>
+              </div>
+              <div class="timeline-body">
+                <p><a href="#">View Documents</a></p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-badge"><i class="glyphicon glyphicon-send"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">We called you</h4>
+                <p class="timestamp"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 03/28/15 at 9:15AM (PST)</small></p>
+                <span class="category">Calls</span>
+              </div>
+              <div class="timeline-body">
+                <p><a href="#">Show Details</a></p>
+              </div>
+            </div>
+          </li>
+      </ul>
+    </div><!-- /. history-items --> 
+    <h2>Application Started 03/28/15</h2>
+      </div>
+    </div><!-- /. container -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://listjs.com/no-cdn/list.js"></script>
+    <script src="http://listjs.com/no-cdn/list.fuzzysearch.js"></script>
+    <script src="js/testlist.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/upload.js"></script>
+    <script src="js/pdf_modal.js"></script>
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.0/js/bootstrap-toggle.min.js"></script>
+  </body>
+</html>
