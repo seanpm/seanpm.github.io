@@ -23,6 +23,9 @@
     <![endif]-->
   </head>
   <body>
+    <!-- BEGIN LivePerson Monitor. -->
+<script type="text/javascript"> window.lpTag=window.lpTag||{};if(typeof window.lpTag._tagCount==='undefined'){window.lpTag={site:'79787553'||'',section:lpTag.section||'',autoStart:lpTag.autoStart===false?false:true,ovr:lpTag.ovr||{},_v:'1.5.1',_tagCount:1,protocol:location.protocol,events:{bind:function(app,ev,fn){lpTag.defer(function(){lpTag.events.bind(app,ev,fn);},0);},trigger:function(app,ev,json){lpTag.defer(function(){lpTag.events.trigger(app,ev,json);},1);}},defer:function(fn,fnType){if(fnType==0){this._defB=this._defB||[];this._defB.push(fn);}else if(fnType==1){this._defT=this._defT||[];this._defT.push(fn);}else{this._defL=this._defL||[];this._defL.push(fn);}},load:function(src,chr,id){var t=this;setTimeout(function(){t._load(src,chr,id);},0);},_load:function(src,chr,id){var url=src;if(!src){url=this.protocol+'//'+((this.ovr&&this.ovr.domain)?this.ovr.domain:'lptag.liveperson.net')+'/tag/tag.js?site='+this.site;}var s=document.createElement('script');s.setAttribute('charset',chr?chr:'UTF-8');if(id){s.setAttribute('id',id);}s.setAttribute('src',url);document.getElementsByTagName('head').item(0).appendChild(s);},init:function(){this._timing=this._timing||{};this._timing.start=(new Date()).getTime();var that=this;if(window.attachEvent){window.attachEvent('onload',function(){that._domReady('domReady');});}else{window.addEventListener('DOMContentLoaded',function(){that._domReady('contReady');},false);window.addEventListener('load',function(){that._domReady('domReady');},false);}if(typeof(window._lptStop)=='undefined'){this.load();}},start:function(){this.autoStart=true;},_domReady:function(n){if(!this.isDom){this.isDom=true;this.events.trigger('LPT','DOM_READY',{t:n});}this._timing[n]=(new Date()).getTime();},vars:lpTag.vars||[],dbs:lpTag.dbs||[],ctn:lpTag.ctn||[],sdes:lpTag.sdes||[],ev:lpTag.ev||[]};lpTag.init();}else{window.lpTag._tagCount+=1;} </script>
+<!-- END LivePerson Monitor. -->
       <!-- Static navbar -->
       <nav class="navbar navbar-default">
         <div class="container">
@@ -196,40 +199,82 @@
           <div class="col-sm-5 pull-right">
 
                         <div class="stepwizard">
-                <div class="stepwizard-row">
-                    <div class="stepwizard-step">
-                        <button type="button" class="btn btn-primary btn-circle"><span class="glyphicon glyphicon-ok"></span></button>
+                <ul class="stepwizard-row" role="tablist">
+                    <li class="stepwizard-step" role="presentation">
+                        <a href="#step-1" aria-controls="step-1" role="tab" data-toggle="tab" class="btn btn-primary btn-circle"><span class="glyphicon glyphicon-ok"></span></a>
                         <p>Application</p>
-                    </div>
-                    <div class="stepwizard-step">
-                        <button type="button" class="btn btn-primary btn-circle">2</button>
+                    </li>
+                    <li class="stepwizard-step" role="presentation">
+                        <a href="#step-2" aria-controls="step-2" role="tab" data-toggle="tab" class="btn btn-primary btn-circle active">2</a>
                         <p>Processing</p>
-                    </div>
-                    <div class="stepwizard-step">
-                        <button type="button" class="btn btn-default btn-circle" disabled="disabled">3</button>
+                    </li>
+                    <li class="stepwizard-step" role="presentation">
+                        <a href="#step-3" aria-controls="step-3" role="tab" data-toggle="tab" class="btn btn-default btn-circle">3</a>
                         <p>Underwriting</p>
-                    </div> 
-                    <div class="stepwizard-step">
-                        <button type="button" class="btn btn-default btn-circle" disabled="disabled">4</button>
+                    </li> 
+                    <li class="stepwizard-step" role="presentation">
+                        <a href="#step-4" aria-controls="step-4" role="tab" data-toggle="tab" class="btn btn-default btn-circle">4</a>
                         <p>Approval</p>
-                    </div> 
-                    <div class="stepwizard-step">
-                        <button type="button" class="btn btn-default btn-circle" disabled="disabled">5</button>
+                    </li> 
+                    <li class="stepwizard-step" role="presentation">
+                        <a href="#step-5" aria-controls="step-5" role="tab" data-toggle="tab" class="btn btn-default btn-circle">5</a>
                         <p>Closing</p>
-                    </div> 
-                </div>
+                    </li> 
+                </ul>
             </div>
 
-            <h3 id="tour-5">Processing</h3>
-              <p class="lead">
-                You've made it through the mortgage loan application – whew! Now your application works its way through the loan process on its way to the closing table.
-              </p>
-              <p>
-                <a href="#"><span class="glyphicon glyphicon-facetime-video"></span> Watch the Video</a> | <a href="http://www.pennymacusa.com/blog/explaining-the-loan-process-part-3-processing">Learn more...</a>
-              </p>
-              <hr>
-              <p class="lead"><span class="glyphicon glyphicon-time"></span> How long does this take?</p>
-              <p>Processing started on 03/09/15 and usually takes about 10 business days.</p>
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane" id="step-1">
+                <h3>Application</h3>
+                <p class="lead">
+                  You did it!
+                </p>
+                <img src="http://www.reactiongifs.com/wp-content/uploads/2013/01/youre-awesome.gif">
+              </div>
+              <div role="tabpanel" class="tab-pane fade in active" id="step-2">
+                <h3>Processing</h3>
+                <p class="lead">
+                  You've made it through the mortgage loan application -- whew! Now your application works its way through the loan process on its way to the closing table.
+                </p>
+                <p>
+                  <a href="#"><span class="glyphicon glyphicon-facetime-video"></span> Watch the Video</a> | <a href="http://www.pennymacusa.com/blog/explaining-the-loan-process-part-3-processing">Learn more...</a>
+                </p>
+                <hr>
+                <p class="lead"><span class="glyphicon glyphicon-time"></span> How long does this take?</p>
+                <p>Processing started on 03/09/15 and usually takes about 10 business days.</p>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="step-3">
+                <h3>Underwriting</h3>
+                <p class="lead">
+                  In the mortgage underwriting process, an underwriter will make sure your financial profile matches your lender's guidelines and loan criteria. Then, your underwriter will make the final decision – to approve or deny your loan request.
+                </p>
+                <p>
+                  <a href="#"><span class="glyphicon glyphicon-facetime-video"></span> Watch the Video</a> | <a href="http://www.pennymacusa.com/blog/explaining-the-loan-process-part-4-mortgage-underwriting">Learn more...</a>
+                </p>
+                <hr>
+                <p class="lead"><span class="glyphicon glyphicon-time"></span> How long does this take?</p>
+                <p>Underwriting usually takes about 10 business days but can take longer.</p>
+
+              </div>
+              <div role="tabpanel" class="tab-pane" id="step-4">
+                <h3>Approval</h3>
+                <img src="http://www.reactiongifs.com/wp-content/uploads/2012/11/super-happy-men.gif">
+              </div>
+              <div role="tabpanel" class="tab-pane" id="step-5">
+                <h3>Closing</h3>
+                <p class="lead">
+                  During closing, the property title passes from the seller to the buyer. A closing agent -- an attorney or official from a title or mortgage company -- oversees this process, which typically takes place at a title company, escrow office, or your home.
+                </p>
+                <p>
+                  <a href="#"><span class="glyphicon glyphicon-facetime-video"></span> Watch the Video</a> | <a href="http://www.pennymacusa.com/blog/explaining-the-loan-process-part-5-the-mortgage-closing">Learn more...</a>
+                </p>
+                <hr>
+                <p class="lead"><span class="glyphicon glyphicon-time"></span> How long does this take?</p>
+                <p>Closing usually takes about 5 business days.</p>
+              </div>
+            </div>
+
           </div>
         </div>
       </main>
@@ -288,7 +333,8 @@
                 </div>
                 <div class="col-md-6">
                   <h2>Live Chat with PennyMac Support</h2>
-                    <div class="well">
+                  <div id="live-person"></div>
+                    <!-- <div class="well">
                     <p><span class="online"></span> We are online! Ask us anything.</p>
                     <hr data-brackets-id="12673">
                     <div class="input-group">
@@ -297,7 +343,7 @@
                             <a href="#" class="btn btn-primary btn-sm">Send</a>
                         </span>
                     </div>
-                    </div>
+                    </div> -->
                 </div>
               </div>
             </div>
