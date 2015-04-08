@@ -268,52 +268,89 @@
           <div class="col-sm-5 pull-right">
 
             <div class="stepwizard">
-                <div class="stepwizard-row">
-                    <div class="stepwizard-step">
-                        <button type="button" class="btn btn-primary btn-circle">1</button>
+                <ul class="stepwizard-row" role="tablist">
+                    <li class="stepwizard-step" role="presentation">
+                        <a href="#step-1" aria-controls="step-1" role="tab" data-toggle="tab" class="btn btn-primary btn-circle active">1</a>
                         <p>Application</p>
-                    </div>
-                    <div class="stepwizard-step">
-                        <button type="button" class="btn btn-default btn-circle" disabled="disabled">2</button>
+                    </li>
+                    <li class="stepwizard-step" role="presentation">
+                        <a href="#step-2" aria-controls="step-2" role="tab" data-toggle="tab" class="btn btn-primary btn-circle">2</a>
                         <p>Processing</p>
-                    </div>
-                    <div class="stepwizard-step">
-                        <button type="button" class="btn btn-default btn-circle" disabled="disabled">3</button>
+                    </li>
+                    <li class="stepwizard-step" role="presentation">
+                        <a href="#step-3" aria-controls="step-3" role="tab" data-toggle="tab" class="btn btn-default btn-circle">3</a>
                         <p>Underwriting</p>
-                    </div> 
-                    <div class="stepwizard-step">
-                        <button type="button" class="btn btn-default btn-circle" disabled="disabled">4</button>
+                    </li> 
+                    <li class="stepwizard-step" role="presentation">
+                        <a href="#step-4" aria-controls="step-4" role="tab" data-toggle="tab" class="btn btn-default btn-circle">4</a>
                         <p>Approval</p>
-                    </div> 
-                    <div class="stepwizard-step">
-                        <button type="button" class="btn btn-default btn-circle" disabled="disabled">5</button>
+                    </li> 
+                    <li class="stepwizard-step" role="presentation">
+                        <a href="#step-5" aria-controls="step-5" role="tab" data-toggle="tab" class="btn btn-default btn-circle">5</a>
                         <p>Closing</p>
-                    </div> 
-                </div>
+                    </li> 
+                </ul>
             </div>
 
-            <h3 id="tour-6">Application</h3>
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane" id="step-1">
+                <h3 id="tour-6">Application</h3>
               <p class="lead">
                 The five-page Application provides us with the basic information needed to approve a buyer. It will capture details about you, your finances and your future mortgage. A loan officer will almost always help you fill out your application, over the phone or in person.
               </p>
               <p>
                 <a href="#" data-toggle="modal" data-target=".bs-video-modal-lg"><span class="glyphicon glyphicon-facetime-video"></span> Watch the Video</a> | <a href="http://www.pennymacusa.com/blog/explaining-the-home-loan-process-part-2-the-application">Learn more...</a>
               </p>
-              <div class="modal fade bs-video-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                          <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h4 class="modal-title" id="exampleModalLabel">The Application Process Explained</h4>
-                              </div>
-                              <div class="modal-body">
-                                ...
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-              <hr>
-              <p class="lead"><span class="glyphicon glyphicon-time"></span> How long does this take?</p>
-              <p>Application was opened on 03/26/15 and usually takes about 5 business days.</p>
+                <!--<img src="http://www.reactiongifs.com/wp-content/uploads/2013/01/youre-awesome.gif">-->
+              </div>
+              <div role="tabpanel" class="tab-pane fade in active" id="step-2">
+                <h3>Processing</h3>
+                <p class="lead">
+                  You've made it through the mortgage loan application -- whew! Now your application works its way through the loan process on its way to the closing table.
+                </p>
+                <p>
+                  <a href="#"><span class="glyphicon glyphicon-facetime-video"></span> Watch the Video</a> | <a href="http://www.pennymacusa.com/blog/explaining-the-loan-process-part-3-processing">Learn more...</a>
+                </p>
+                <hr>
+                <p class="lead"><span class="glyphicon glyphicon-time"></span> How long does this take?</p>
+                <p>Processing started on 03/09/15 and usually takes about 10 business days.</p>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="step-3">
+                <h3>Underwriting</h3>
+                <p class="lead">
+                  In the mortgage underwriting process, an underwriter will make sure your financial profile matches your lender's guidelines and loan criteria. Then, your underwriter will make the final decision – to approve or deny your loan request.
+                </p>
+                <p>
+                  <a href="#"><span class="glyphicon glyphicon-facetime-video"></span> Watch the Video</a> | <a href="http://www.pennymacusa.com/blog/explaining-the-loan-process-part-4-mortgage-underwriting">Learn more...</a>
+                </p>
+                <hr>
+                <p class="lead"><span class="glyphicon glyphicon-time"></span> How long does this take?</p>
+                <p>Underwriting usually takes about 10 business days but can take longer.</p>
+
+              </div>
+              <div role="tabpanel" class="tab-pane" id="step-4">
+                <h3>Approval</h3>
+                <!--<img src="http://www.reactiongifs.com/wp-content/uploads/2012/11/super-happy-men.gif">-->
+                <!-- <img src="http://media.giphy.com/media/Is1O1TWV0LEJi/giphy.gif"> -->
+                <p class="lead">
+                  Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                </p>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="step-5">
+                <h3>Closing</h3>
+                <p class="lead">
+                  During closing, the property title passes from the seller to the buyer. A closing agent -- an attorney or official from a title or mortgage company -- oversees this process, which typically takes place at a title company, escrow office, or your home.
+                </p>
+                <p>
+                  <a href="#"><span class="glyphicon glyphicon-facetime-video"></span> Watch the Video</a> | <a href="http://www.pennymacusa.com/blog/explaining-the-loan-process-part-5-the-mortgage-closing">Learn more...</a>
+                </p>
+                <hr>
+                <p class="lead"><span class="glyphicon glyphicon-time"></span> How long does this take?</p>
+                <p>Closing usually takes about 5 business days.</p>
+              </div>
+            </div>
+
           </div>
         </div>
       </main>
