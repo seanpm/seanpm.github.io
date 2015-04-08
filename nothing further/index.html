@@ -12,8 +12,6 @@
     <link href="css/theme.css" rel="stylesheet">
     <!-- Animation Effects -->
     <link rel="stylesheet" type="text/css" media="all" href="css/animate.css">
-    <!-- Tour -->
-    <link rel="stylesheet" href="css/hopscotch.css">
     <!-- Toggle Switches -->
     <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.0/css/bootstrap-toggle.min.css" rel="stylesheet">
 
@@ -25,6 +23,9 @@
     <![endif]-->
   </head>
   <body>
+    <!-- BEGIN LivePerson Monitor. -->
+<script type="text/javascript"> window.lpTag=window.lpTag||{};if(typeof window.lpTag._tagCount==='undefined'){window.lpTag={site:'79787553'||'',section:lpTag.section||'',autoStart:lpTag.autoStart===false?false:true,ovr:lpTag.ovr||{},_v:'1.5.1',_tagCount:1,protocol:location.protocol,events:{bind:function(app,ev,fn){lpTag.defer(function(){lpTag.events.bind(app,ev,fn);},0);},trigger:function(app,ev,json){lpTag.defer(function(){lpTag.events.trigger(app,ev,json);},1);}},defer:function(fn,fnType){if(fnType==0){this._defB=this._defB||[];this._defB.push(fn);}else if(fnType==1){this._defT=this._defT||[];this._defT.push(fn);}else{this._defL=this._defL||[];this._defL.push(fn);}},load:function(src,chr,id){var t=this;setTimeout(function(){t._load(src,chr,id);},0);},_load:function(src,chr,id){var url=src;if(!src){url=this.protocol+'//'+((this.ovr&&this.ovr.domain)?this.ovr.domain:'lptag.liveperson.net')+'/tag/tag.js?site='+this.site;}var s=document.createElement('script');s.setAttribute('charset',chr?chr:'UTF-8');if(id){s.setAttribute('id',id);}s.setAttribute('src',url);document.getElementsByTagName('head').item(0).appendChild(s);},init:function(){this._timing=this._timing||{};this._timing.start=(new Date()).getTime();var that=this;if(window.attachEvent){window.attachEvent('onload',function(){that._domReady('domReady');});}else{window.addEventListener('DOMContentLoaded',function(){that._domReady('contReady');},false);window.addEventListener('load',function(){that._domReady('domReady');},false);}if(typeof(window._lptStop)=='undefined'){this.load();}},start:function(){this.autoStart=true;},_domReady:function(n){if(!this.isDom){this.isDom=true;this.events.trigger('LPT','DOM_READY',{t:n});}this._timing[n]=(new Date()).getTime();},vars:lpTag.vars||[],dbs:lpTag.dbs||[],ctn:lpTag.ctn||[],sdes:lpTag.sdes||[],ev:lpTag.ev||[]};lpTag.init();}else{window.lpTag._tagCount+=1;} </script>
+<!-- END LivePerson Monitor. -->
       <!-- Static navbar -->
       <nav class="navbar navbar-default">
         <div class="container">
@@ -131,7 +132,6 @@
                     <a href="#" class="list-group-item">0.350 Points</a>
                     <a href="#" class="list-group-item">4.330% APR</a>
                     <a href="#" class="list-group-item">$3,898/mo</a>
-                    <a href="#" class="list-group-item">Cash to Close: $38,988</a>
                     <a href="#" class="list-group-item"><span class="glyphicon glyphicon-lock"></span> Rate Locked Until 04/28/15</a>
                   </div>
                   <p class="muted">*The above are proposed terms.</p>
@@ -151,7 +151,7 @@
                 <h2 id="tour-4">Here's your to-do list:</h2>
               </div>
               <div class="col-md-4 hidden-xs">
-                <!-- Appraisal photo not shown yet, unless we are able to pull it from Google Street View. -->
+                <img src="img/house-appraisal.png" class="img-circle appraisal-photo pull-right animated tada">
               </div>
             </div>
 <!--         <div class="row todo-heading">
@@ -163,119 +163,33 @@
           </div>
         </div> -->
           <hr />
-          <div class="todo-item">
-              <p><span class="glyphicon glyphicon-unchecked"></span> &nbsp;<a id="tour-5" data-toggle="collapse" href="#collapse1" aria-expanded="false" aria-controls="collapseExample">Set your Notification Preferences</a> <span class="due-date pull-right">Due in 23 Hours</span></p>
-                <div class="collapse" id="collapse1">
-                  <div class="panel panel-default">
-                    <div class="panel-heading"><strong>Settings</strong></div>
-                      <div class="panel-body">
-                        <p>Please choose how you'd like to be notified when loan updates are available. Please <a href="#" data-toggle="modal" data-target=".bs-example-modal-lg">call us</a> with any questions.</p>
-                        <a href="#" class="btn btn-primary pull-right" data-toggle="modal" data-target=".settings-modal">Set Preferences</a>
-                      </div>
-                  </div>
-                </div>
-            </div>
-    <hr />
             <div class="todo-item">
-              <p><span class="glyphicon glyphicon-unchecked"></span> &nbsp;<a data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapseExample">View and E-Sign your Loan Disclosures</a> <span class="due-date pull-right">Due in 23 Hours</span></p>
-                <div class="collapse" id="collapse2">
-                  <div class="panel panel-default">
-                    <div class="panel-heading"><strong>Document Review</strong></div>
-                      <div class="panel-body">
-                        <p>Please review your loan disclosures for accuracy, then electronically sign them. Feel free to <a href="#" data-toggle="modal" data-target=".bs-example-modal-lg">call us</a> with any questions.</p>
-                        <a href="pdf/disclosures.pdf" class="btn btn-primary pull-right view-pdf">View and Sign</a>
-                      </div>
-                  </div>
-                </div>
-            </div>
-    <hr />
-    <div class="todo-item">
-              <p><span class="glyphicon glyphicon-unchecked"></span> &nbsp;<a data-toggle="collapse" href="#collapse3" aria-expanded="false" aria-controls="collapseExample">View and E-Sign your Loan Documents</a> <span class="due-date pull-right">Due in 23 Hours</span></p>
-                <div class="collapse" id="collapse3">
-                  <div class="panel panel-default">
-                    <div class="panel-heading"><strong>Document Review</strong></div>
-                      <div class="panel-body">
-                        <p>Please review your loan disclosures for accuracy, then electronically sign them. Feel free to <a href="#" data-toggle="modal" data-target=".bs-example-modal-lg">call us</a> with any questions.</p>
-                        <a href="#" class="btn btn-primary pull-right" data-toggle="modal" data-target=".bs-example1-modal-lg">View and Sign</a>
-                        <div class="modal fade bs-example1-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                          <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h4 class="modal-title" id="exampleModalLabel">Document View and E-Sign</h4>
-                              </div>
-                              <div class="modal-body">
-                                ...
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                  </div>
-                </div>
-            </div>
-                <hr />
-            <div class="todo-item reply-sent">
-              <p><span class="glyphicon glyphicon-unchecked"></span> &nbsp;<a data-toggle="collapse" href="#collapse4" aria-expanded="false" aria-controls="collapseExample">Reply to RE: Insurance Agent Contact Info</a> <span class="due-date status-okay pull-right">Due by 04/05/15</span></p>
-                <div class="collapse" id="collapse4">
-                  <div class="panel panel-default">
-                    <div class="panel-heading"><strong>Secure Message</strong></div>
-                      <div class="panel-body">
-                        <p><strong>From:</strong> Audrey Dabolt on 03/28/15 at 10:15AM (PST)</p>
-                        <hr />
-                        <p>Hi Francis, can you please provide me with the full name and phone number of your current State
-    Farm insurance agent?  Thanks!</p>
-                        <textarea class="form-control" rows="3" placeholder="Type your reply here..."></textarea>
-                        <input class="btn btn-default pull-right send-reply" type="submit" value="Send">
-                      </div>
-                  </div>
-                </div>
+              <p class="lead">There is nothing further for you to do at this time.</p>
+              <p>
+                <strong>Now the ball is in our court, and we're working on the following items:</strong>
+              </p>
             </div>
             <hr />
             <div class="todo-item">
-              <p><span class="glyphicon glyphicon-unchecked"></span> &nbsp;<a id="todo_example" data-toggle="collapse" href="#collapse5" aria-expanded="false" aria-controls="collapseExample">Upload your W2</a> <span class="due-date status-okay pull-right">Due by 04/07/15</span></p>
-                <div class="collapse" id="collapse5">     
-                    <div class="panel panel-default">
-            <div class="panel-heading"><strong>Document Upload</strong></div>
-            <div class="panel-body" id="js-upload-form">
-
-
-              <!-- Drop Zone -->
-              <h4>Drag and drop files below</h4>
-              <div class="upload-drop-zone" id="drop-zone">
-                Just drag and drop files here or <a href="#" class="btn btn-default">Choose Files</a>
-              </div>
-
-              <!-- Upload Progress Bar
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                  <span class="sr-only">60% Complete</span>
-                </div>
-              </div> -->
-
-              <!-- Upload Finished
-              <div class="js-upload-finished">
-                <h3>Processed files</h3>
-                <div class="list-group">
-                  <a href="#" class="list-group-item list-group-item-success"><span class="badge alert-success pull-right">Success</span>w2.pdf</a>
-                </div>
-              </div> -->
+              <p><img src="img/waiting.gif"> &nbsp; Waiting for ABC Appraisal Co. to complete the property appraisal.</p>
             </div>
-          </div>
-
-                </div>
+            <hr />
+            <div class="todo-item">
+              <p><img src="img/waiting.gif"> &nbsp; We're reviewing documents you uploaded for approval.</p>
             </div>
-           <hr />
+            <hr />
+              <p class="lead">We'll let you know as soon as we have an update for you!</p>
           </div>
           <div class="col-sm-5 pull-right">
 
-            <div class="stepwizard">
+                        <div class="stepwizard">
                 <ul class="stepwizard-row" role="tablist">
                     <li class="stepwizard-step" role="presentation">
-                        <a href="#step-1" aria-controls="step-1" role="tab" data-toggle="tab" class="btn btn-primary btn-circle active">1</a>
+                        <a href="#step-1" aria-controls="step-1" role="tab" data-toggle="tab" class="btn btn-primary btn-circle"><span class="glyphicon glyphicon-ok"></span></a>
                         <p>Application</p>
                     </li>
                     <li class="stepwizard-step" role="presentation">
-                        <a href="#step-2" aria-controls="step-2" role="tab" data-toggle="tab" class="btn btn-default btn-circle">2</a>
+                        <a href="#step-2" aria-controls="step-2" role="tab" data-toggle="tab" class="btn btn-primary btn-circle active">2</a>
                         <p>Processing</p>
                     </li>
                     <li class="stepwizard-step" role="presentation">
@@ -295,18 +209,14 @@
 
             <!-- Tab panes -->
             <div class="tab-content">
-              <div role="tabpanel" class="tab-pane fade in active" id="step-1">
-                <h3 id="tour-6">Application</h3>
-              <p class="lead">
-                The five-page Application provides us with the basic information needed to approve a buyer. It will capture details about you, your finances and your future mortgage. A loan officer will almost always help you fill out your application, over the phone or in person.
-              </p>
-              <p class="lead">
-                <a href="#" data-toggle="modal" data-target=".bs-video-modal-lg"><span class="glyphicon glyphicon-facetime-video"></span> Watch the Video</a> | <a href="http://www.pennymacusa.com/blog/explaining-the-home-loan-process-part-2-the-application">Learn more...</a>
-              </p>
-              <hr>
+              <div role="tabpanel" class="tab-pane" id="step-1">
+                <h3>Application</h3>
+                <p class="lead">
+                  You did it!
+                </p>
                 <!--<img src="http://www.reactiongifs.com/wp-content/uploads/2013/01/youre-awesome.gif">-->
               </div>
-              <div role="tabpanel" class="tab-pane" id="step-2">
+              <div role="tabpanel" class="tab-pane fade in active" id="step-2">
                 <h3>Processing</h3>
                 <p class="lead">
                   You've made it through the mortgage loan application -- whew! Now your application works its way through the loan process on its way to the closing table.
@@ -314,7 +224,7 @@
                 <p>
                   <a href="#"><span class="glyphicon glyphicon-facetime-video"></span> Watch the Video</a> | <a href="http://www.pennymacusa.com/blog/explaining-the-loan-process-part-3-processing">Learn more...</a>
                 </p>
-              <hr>
+                <hr>
                 <p class="lead"><span class="glyphicon glyphicon-time"></span> How long does this take?</p>
                 <p>Processing started on 03/09/15 and usually takes about 10 business days.</p>
               </div>
@@ -421,19 +331,6 @@
                       </div>
                     </div>
                   </div>
-                  <div class="contact-card"><!-- Contact Card -->
-                    <div class="row">
-                      <div class="col-xs-4">
-                        <img src="https://lh3.googleusercontent.com/-BgU-7WY6nZk/AAAAAAAAAAI/AAAAAAAAHGg/LY5C1VDBPlo/s120-c/photo.jpg" width="100" height="100" class="img-thumbnail">
-                      </div>
-                      <div class="col-xs-8">
-                        <h4>Farnaz Ansari</h4>
-                        <p><strong>Manager</strong></p>
-                        <p>Phone: (866) 545-9070</p>
-                        <p>Email: <a href="#">farnaz.ansari@pnmac.com</a></p>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -458,6 +355,194 @@
             </div>
           </div>
           <ul class="list timeline">
+          <li>
+            <div class="timeline-badge"><i class="glyphicon glyphicon-cog"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">You uploaded the two most recent paystubs for all borrowers that reflect 30 days of pay history</h4>
+                <p class="timestamp"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 04/02/15 at 4:48PM (PST)</small></p>
+                <span class="category">Documents</span>
+              </div>
+              <div class="timeline-body">
+                <p><a href="#">View Documents</a></p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-badge"><i class="glyphicon glyphicon-upload"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">You updated your email address</h4>
+                <p class="timestamp"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 04/02/15 at 3:18PM (PST)</small></p>
+                <span class="category">Messages</span>
+              </div>
+              <div class="timeline-body">
+                <p><a href="#">View Settings</a></p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-badge"><i class="glyphicon glyphicon-send"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">You called us</h4>
+                <p class="timestamp"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 04/02/15 at 3:15PM (PST)</small></p>
+                <span class="category">Messages</span>
+              </div>
+              <div class="timeline-body">
+                <p><a href="#">Show Message</a></p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-badge"><i class="glyphicon glyphicon-phone-alt"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">We called you</h4>
+                <p class="timestamp"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 04/02/15 at 2:09PM (PST)</small></p>
+                <span class="category">Messages</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-badge"><i class="glyphicon glyphicon-thumbs-up"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">You uploaded a current copy of the Property Tax Bill for all Real Estate owned</h4>
+                <p class="timestamp"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 04/02/15 at 3:29PM (PST)</small></p>
+                <span class="category">Documents</span>
+              </div>
+              <div class="timeline-body">
+                <p><a href="#">View Documents</a></p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-badge"><i class="glyphicon glyphicon-upload"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">You uploaded a copy of your co-borrower's social security card</h4>
+                <p class="timestamp"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 04/01/15 at 12:18AM (PST)</small></p>
+                <span class="category">Documents</span>
+              </div>
+              <div class="timeline-body">
+                <p><a href="#">View Documents</a></p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-badge"><i class="glyphicon glyphicon-cog"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">You uploaded a copy of your social security card</h4>
+                <p class="timestamp"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 04/01/15 at 12:13AM (PST)</small></p>
+                <span class="category">Documents</span>
+              </div>
+              <div class="timeline-body">
+                <p><a href="#">View Settings</a></p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-badge"><i class="glyphicon glyphicon-upload"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">You uploaded your most recent 2 years signed tax returns, including all schedules</h4>
+                <p class="timestamp"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 03/31/15 at 3:18PM (PST)</small></p>
+                <span class="category">Documents</span>
+              </div>
+              <div class="timeline-body">
+                <p><a href="#">View Documents</a></p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-badge"><i class="glyphicon glyphicon-send"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">You uploaded the most recent 2 years W2 forms</h4>
+                <p class="timestamp"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 03/30/15 at 6:15PM (PST)</small></p>
+                <span class="category">Documents</span>
+              </div>
+              <div class="timeline-body">
+                <p><a href="#">Show Details</a></p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-badge"><i class="glyphicon glyphicon-phone-alt"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">You provided Earnest Money Deposit Source evidence</h4>
+                <p class="timestamp"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 03/30/15 at 5:09PM (PST)</small></p>
+                <span class="category">Documents</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-badge"><i class="glyphicon glyphicon-thumbs-up"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">You confirmed receipt of the Disclosures Packet</h4>
+                <p class="timestamp"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 03/29/15 at 3:29PM (PST)</small></p>
+                <span class="category">Documents</span>
+              </div>
+              <div class="timeline-body">
+                <p><a href="#">View Documents</a></p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-badge"><i class="glyphicon glyphicon-upload"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">You uploaded your Driver's License</h4>
+                <p class="timestamp"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 03/29/15 at 3:24PM (PST)</small></p>
+                <span class="category">Documents</span>
+              </div>
+              <div class="timeline-body">
+                <p><a href="#" data-toggle="modal" data-target=".docs-modal">View Documents</a></p>
+              </div>
+            </div>
+            <div class="docs-modal modal fade bs-example1-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h4 class="modal-title" id="exampleModalLabel">Driver's License</h4>
+                              </div>
+                              <div class="modal-body">
+                                <img src="img/license.jpg" style="width:500px;">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+          </li>
+          <li>
+            <div class="timeline-badge"><i class="glyphicon glyphicon-cog"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">You set your notification preferences</h4>
+                <p class="timestamp"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 03/29/15 at 3:21PM (PST)</small></p>
+                <span class="category">Messages</span>
+              </div>
+              <div class="timeline-body">
+                <p><a href="#">View Settings</a></p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-badge"><i class="glyphicon glyphicon-upload"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">You uploaded your W2</h4>
+                <p class="timestamp"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 03/29/15 at 3:18PM (PST)</small></p>
+                <span class="category">Documents</span>
+              </div>
+              <div class="timeline-body">
+                <p><a href="#">View Documents</a></p>
+              </div>
+            </div>
+          </li>
           <li>
             <div class="timeline-badge"><i class="glyphicon glyphicon-send"></i></div>
             <div class="timeline-panel">
@@ -487,8 +572,5 @@
     <script src="js/upload.js"></script>
     <script src="js/pdf_modal.js"></script>
     <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.0/js/bootstrap-toggle.min.js"></script>
-    <!-- Tour -->
-    <script src="js/hopscotch.js"></script>
-    <script src="js/login_tour.js"></script>
   </body>
 </html>
